@@ -84,3 +84,7 @@ hs_err_pid*
 .history
 
 # End of https://www.gitignore.io/api/java,intellij,visualstudiocode
+#Ignore all .classpath and .project files
+.classpath
+.project#Ignore folder bin
+bin/
