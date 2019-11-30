@@ -63,32 +63,3 @@ public class Thanos {
  
 }
 
-/*
-1.
-
-Modify the Hero class by using the Comparable class. The default sort order should be alphabetically by the name attribute.
-2.
-
-In the Thanos class, ensure that the list of heroes is sorted alphabetically.
-3.
-
-In the Thanos class, add a Comparator to sort the list of heroes by the age attribute in descending order.
-
-Run Thanos. The expected result is as follows:
-
-Order by name:
-Black Widow, 34
-Captain America, 100
-Hulk, 49
-Thor, 1501
-$ 
-Order by age:
-Thor, 1501
-Captain America, 100
-Hulk, 49
-Black Widow, 34
-
-
-
-
-*/
