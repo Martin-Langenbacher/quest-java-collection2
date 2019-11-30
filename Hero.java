@@ -1,16 +1,18 @@
-public class Hero {
-
+public class Hero implements Comparable<Hero>{
+	
     // attributs
     private String name;
     private int age;
 
     // constructeurs
     public Hero(String name, int age) {
-        this.name = name;
+        super();
+    	this.name = name;
         this.age = age;
     }
 
-    // accesseurs (getters)
+
+	// accesseurs (getters)
     public String getName() {
         return name;
     }
@@ -27,4 +29,28 @@ public class Hero {
     public void setAge(int age) {
         this.age = age;
     }
+
+	
+    // "toString came from the video":
+    @Override
+	public String toString() {
+		return "Hero [name=" + name + ", age=" + age + "]";
+	}
+
+	@Override 
+	public int compareTo(Hero hero2) {
+    	
+    	// this > arg0 = +
+    	// this < arg0 = -
+    	// == arg0 = 0
+    	
+    	if(this.getAge() > hero2.getAge())
+    		return -1;
+    	else
+    		return 1;
+    	
+	}
+
+
 }
+
