@@ -37,6 +37,12 @@ public class Hero implements Comparable<Hero>{
 		return "Hero [name=" + name + ", age=" + age + "]";
 	}
 
+    public int compareTo(Hero anotherHero) {
+    	// Es wird nach dem Namen des Hero aufsteigend sortiert
+    			return this.getName().compareTo(anotherHero.getName());
+    		}
+    
+    /*
 	@Override 
 	public int compareTo(Hero hero2) {
     	
@@ -46,11 +52,13 @@ public class Hero implements Comparable<Hero>{
     	
     	if(this.getAge() > hero2.getAge())
     		return -1;
-    	else
+    	else if (this.getAge() < hero2.getAge())
     		return 1;
-    	
+    	else {
+    		return 0;
+    	}
 	}
 
-
+*/
 }
 
