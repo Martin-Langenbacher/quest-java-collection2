@@ -59,7 +59,7 @@ public class Thanos {
         	
         	@Override
         	public int compare(Hero h1, Hero h2) {
-        		return Integer.valueOf(h2.getAge()).compareTo(Integer.valueOf(h2.getAge()));
+        		return Integer.valueOf(h2.getAge()).compareTo(Integer.valueOf(h1.getAge()));
         	}
         };
         
